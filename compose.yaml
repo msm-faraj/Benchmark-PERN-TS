@@ -1,0 +1,8 @@
+services:
+  client:
+    build: ./app-client
+    container_name: app-client-cnt
+    ports:
+      - 3000:3000
+    volumes:
+      - ./app-client:/app-client

@@ -3,7 +3,7 @@
 this is a benchmark for starting to work with PERN stack
 p => postgres
 E => express
-R => react (npx create-react-app my-app --template typescript)
+R => react (npx create-react-app app-client --template typescript)
 N => Node
 
 all you need to do is |> docker-compose up
@@ -13,3 +13,11 @@ server 4000
 backend 5000
 
 main CRUD operation
+
+# Command to Done this
+
+npx create-react-app app-client --template typescript
+
+# Commits
+
+created react app with typescript template
