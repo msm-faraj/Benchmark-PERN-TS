@@ -17,7 +17,11 @@ main CRUD operation
 # Command to Done this
 
 npx create-react-app app-client --template typescript
+create dockerfile in /app-client
+create .dockerignore file in /app-client
+create compose.yaml file in root folder of the project
 
 # Commits
 
 created react app with typescript template
+dockerised app-client with docker-compose hot-reloading
