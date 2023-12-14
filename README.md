@@ -1,25 +1,20 @@
 # Benchmark-PERN-TS
 
 this is a benchmark for starting to work with PERN stack
-p => postgres
-E => express
-R => react (npx create-react-app app-client --template typescript)
-N => Node
+p => Postgres
+E => Express
+R => React
+N => Rode
 
-all you need to do is |> docker-compose up
-
-client 3000
-server 4000
-backend 5000
-
-main CRUD operation
-
-# Command to Done this
+# Command/Steps to Done this
 
 npx create-react-app app-client --template typescript
-create dockerfile in /app-client
-create .dockerignore file in /app-client
+create dockerfile in /app-client create .dockerignore file in /app-client
 create compose.yaml file in root folder of the project
+add database service in to the comose.yaml file
+
+- this will run postgres in a separate container &
+- with this it is possible to creae a server on it &
 
 # Commits
 
