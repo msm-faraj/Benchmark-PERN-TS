@@ -1,11 +1,4 @@
 services:
-  client:
-    build: ./app-client
-    container_name: app-client-cnt
-    ports:
-      - 3000:3000
-    volumes:
-      - ./app-client:/app-client
   postgres_db:
     image: postgres:16.1
     container_name: exp-postgres-cnt
@@ -17,5 +10,22 @@ services:
       - 5000:5432
     volumes:
       - postgres_db:/var/lib/postgresql/data
+
+  server:
+    build: ./app-server
+    container_name: app-server-cnt
+    ports:
+      - 4000:4000
+    volumes:
+      - ./app-server:/app-server
+
+  client:
+    build: ./app-client
+    container_name: app-client-cnt
+    ports:
+      - 3000:3000
+    volumes:
+      - ./app-client:/app-client
+
 volumes:
   postgres_db:

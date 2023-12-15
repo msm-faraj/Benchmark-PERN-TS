@@ -16,7 +16,9 @@ add database service in to the comose.yaml file
 - this will run postgres in a separate container &
 - with this it is possible to creae a server on it &
 
+create a server with express + hot-reloading
+
 # Commits
 
 created react app with typescript template
-dockerised app-client with docker-compose hot-reloading
+dockerised app-client with docker-compose + hot-reloading
